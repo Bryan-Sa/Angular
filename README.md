@@ -1,27 +1,24 @@
-# AngularBryan
+create angular repo: 
+ng n "name"
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+install:
+npm install
 
-## Development server
+run:
+npm start
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+usefull command:
+add --flat to command if you do not want to create a folder while generating
+create component: ng g c "path/name" from app/src (do not add app/src) will create a folder with name
+create module: ng g m "path/name" from "app/src" will create a module with name
 
-## Code scaffolding
+Structure:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+src/app/app-routing : declare screen component with associated route.
 
-## Build
+src/app/component : will contain custom lib (button, input, switch, ect...) everything will be export in component.module, just call component module to use each component.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+src/app/screen: will contain all web screen all screen declare in screen.module.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+How to pass props to component:
+Use of @Input "props name": initialization in class component (go tu button component for exemple)

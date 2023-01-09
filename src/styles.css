@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right top, #f61494, #e44bb8, #cb6ad3, #b082e3, #9895ea, #7f9eea, #6ca5e5, #62aadc, #4faacf, #47a8be, #4aa5ad, #54a19c);
+}
+
+.inputText {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

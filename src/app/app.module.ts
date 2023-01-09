@@ -1,20 +1,21 @@
-import { LoginModule } from './login/login.module';
+import { ComponentModule } from './component/component.module';
+import { LoginComponent } from './screen/login/login.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './src/app/login/login.component';
+import { ScreenModule } from './screen/screen.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    ComponentModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
