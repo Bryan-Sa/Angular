@@ -1,0 +1,52 @@
+.black {
+    background-color: #34373D;
+    color:white;
+}
+
+.black:hover{
+    background-color: whitesmoke;
+    color:black;
+}
+
+.default {
+    background-color: whitesmoke;
+    color:black;
+}
+
+.default:hover{
+    background-color: #34373D;
+    color:white;
+}
+
+.sizeDefault {
+    min-width: 100px;
+    min-height: 50px;
+}
+
+.xs {
+    min-width: 50px;
+    min-height: 25px;
+}
+.s {
+    min-width: 100px;
+    min-height: 50px;
+}
+
+.m {
+    min-width: 150xp;
+    min-height: 50px;
+}
+
+.l {
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.defaultStyle {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}

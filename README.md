@@ -21,4 +21,25 @@ src/app/component : will contain custom lib (button, input, switch, ect...) ever
 src/app/screen: will contain all web screen all screen declare in screen.module.
 
 How to pass props to component:
+If you want to pass children to component do not forgot to use : <ng-content>
+
 Use of @Input "props name": initialization in class component (go tu button component for exemple)
+
+How to style component with props:
+
+use of Ngstyle if props is an object style exemple : [styleProps]="{obj declared in class}" // inside component =  @Input() styleProps: { [klass: string]: any; } = {} [ngStyle]="styleProps";
+
+use of Ngclass ex: [ngClass]="["props"]" | [ngClass]="[props, {class: props === condition}]" ();
+
+Two way binding data:
+pass the variable to the custom component with
+
+inside custom component :
+@Input() variable name
+@Output() variable name + Change : EventEmitter<type of varibale> = new EventEmitter<type of variable>();
+
+
+/////////////////
+color code : blue: #3F557F
+light dark: #34373D
+light blue: #B9C5DC

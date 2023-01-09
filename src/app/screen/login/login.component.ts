@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class LoginComponent {
    email: string = "";
    password : string = "";
+   stylesObj = 
+  {width: "50%", height: "20vh"};
 }

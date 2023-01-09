@@ -7,4 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
     @Input() title : string = "";
+    @Input() border: boolean = false;
+    @Input() size: string = "sizeDefault"
+    @Input() variant: string = "default";
 }

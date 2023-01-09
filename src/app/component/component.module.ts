@@ -1,7 +1,8 @@
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass, NgStyle } from '@angular/common';
+import { BoxComponent } from './box/box.component';
 
 
 
@@ -9,13 +10,17 @@ import { CommonModule } from '@angular/common';
   declarations: [
     ButtonComponent,
     InputComponent,
+    BoxComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgClass,
+    NgStyle
   ],
   exports: [
     ButtonComponent,
     InputComponent,
+    BoxComponent,
   ]
 })
 export class ComponentModule { }

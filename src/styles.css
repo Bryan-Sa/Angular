@@ -3,7 +3,11 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(to right top, #f61494, #e44bb8, #cb6ad3, #b082e3, #9895ea, #7f9eea, #6ca5e5, #62aadc, #4faacf, #47a8be, #4aa5ad, #54a19c);
+    background-image: linear-gradient(to right top, #34373d, #363c49, #384255, #3a4861, #3c4d6e, #47587b, #526388, #5d6f96, #7384a7, #8a99b9, #a1afca, #b9c5dc);
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .inputText {
