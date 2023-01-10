@@ -1,8 +1,49 @@
-<div style="margin-top: 2%">
-    <label>Email</label>
-    <component-button title="je suis pas un test" size="l" variant="black"></component-button>
+<div style="position: absolute; top: 50%; left: 73%;">
+    <ng-lottie [options]="options" (animationCreated)="animationCreated($event)" width="100px" height="100px">
+    </ng-lottie>
+</div>
+<div style="position: absolute; top: 47%; left: 25%;">
+    <ng-lottie [options]="options2" (animationCreated)="animationCreated($event)" width="150px" height="150px">
+    </ng-lottie>
+</div>
+<div style="position: absolute; top: 20%; left: 10%;">
+    <ng-lottie [options]="options" (animationCreated)="animationCreated($event)" width="200px" height="200px">
+    </ng-lottie>
+</div>
+<div class="reverseElement" style="position: absolute; top: 70%; left: 40%;">
+    <ng-lottie [options]="options2" (animationCreated)="animationCreated($event)" width="150px" height="150px">
+    </ng-lottie>
+</div>
+<div class="reverseElement" style="position: absolute; top: 0%; left: 73%;">
+    <ng-lottie [options]="options2" (animationCreated)="animationCreated($event)" width="200px" height="200px">
+    </ng-lottie>
+</div>
+<div style="position: absolute; top: 60%; left: 80%;">
+    <ng-lottie [options]="options3" (animationCreated)="animationCreated($event)" width="300px" height="300px">
+    </ng-lottie>
+</div>
+<div style="position: absolute; top: 10%; left: 40%;">
+    <ng-lottie [options]="options3" (animationCreated)="animationCreated($event)" width="100px" height="100px">
+    </ng-lottie>
+</div>
+
+<div class="Device">
     <component-box variant="white" [styleProps]="stylesObj">
-        <p>test</p>
-        <h3>je suis un gros test</h3>
+        <h1 style="margin-top: 4%">Good to see you again !</h1>
+        <div style="width:50%; margin : auto; margin-top: 3%; text-align: left;min-width: 300px;">
+            <div style="margin-top: 6%">
+                <label>Your email</label>
+                <component-input leftIcon="account_circle" type="email" placeholder="Email" [(value)]="email">
+                </component-input>
+            </div>
+            <div style="margin-top: 6%; min-width: 300px;">
+                <label>Your password</label>
+                <component-input leftIcon="lock" type="password" placeholder="Password" [(value)]="password">
+                </component-input>
+            </div>
+        </div>
+        <div style="margin-top:4%;">
+            <component-button (btnClick)="testFunction('je suis tout puissant')" variant="black" title="Let's go" size="l"></component-button>
+        </div>
     </component-box>
 </div>

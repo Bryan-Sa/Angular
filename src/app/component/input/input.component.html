@@ -1,1 +1,5 @@
-<p>input works!</p>
+<div style="display: flex; align-items: center" class="input">
+    <mat-icon *ngIf="leftIcon.length > 0" style="padding-right:2%; padding-left:2%">{{leftIcon}}</mat-icon>
+    <input value={{value}} class="input" type={{type}} name="email" id="email" placeholder={{placeholder}} (keyup)="override($event)" />
+    <mat-icon *ngIf="rightIcon.length > 0" style="padding-right:2%; padding-left:2%">{{rightIcon}}</mat-icon>
+</div>

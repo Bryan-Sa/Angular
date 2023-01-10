@@ -19,3 +19,9 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.reverseElement {
+    font-size: 30px;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}

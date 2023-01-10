@@ -1,1 +1,1 @@
-<button   [ngClass]="[size, variant, {noBorder: border === false}]" class="defaultStyle" >{{title}}</button>
+<button   [ngClass]="[size, variant, {noBorder: border === false}]" class="defaultStyle" (click)="onClick()">{{title}}</button>

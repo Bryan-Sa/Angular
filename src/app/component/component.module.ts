@@ -1,3 +1,5 @@
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
 import { NgModule } from '@angular/core';
@@ -15,7 +17,9 @@ import { BoxComponent } from './box/box.component';
   imports: [
     CommonModule,
     NgClass,
-    NgStyle
+    NgStyle,
+    FormsModule,
+    MatIconModule
   ],
   exports: [
     ButtonComponent,

@@ -1,6 +1,23 @@
-.body{
-    background-image: linear-gradient(to right top, #f61494, #e44bb8, #cb6ad3, #b082e3, #9895ea, #7f9eea, #6ca5e5, #62aadc, #4faacf, #47a8be, #4aa5ad, #54a19c);
-    height: 99vh;
-    width: 99vw;
+.Device {
+    margin-top: 8%;
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .Device {
+        margin-top: 30%;
+        overflow: hidden;
+    }
+
+    .smallScreenContent {
+        margin-top: 12%;
+        overflow: hidden;
+    }
+
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+
+.smallScreenContent {
+    margin-top: 8;
     overflow: hidden;
 }

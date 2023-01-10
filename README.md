@@ -37,7 +37,14 @@ pass the variable to the custom component with
 inside custom component :
 @Input() variable name
 @Output() variable name + Change : EventEmitter<type of varibale> = new EventEmitter<type of variable>();
+DO NOT FORGET TO ADD .emit() to event !!
+ex: 
+override(event: Event) {
+    this.value = (event.target as HTMLTextAreaElement).value;
+    this.valueChange.emit(this.value);
+  }
 
+equivalent of onchnage function wich also chnage parent value;
 
 /////////////////
 color code : blue: #3F557F
